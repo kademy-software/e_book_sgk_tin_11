@@ -1,14 +1,3 @@
-<?php
-include_once 'dbConnection.php';
-session_start();
-if (!(isset($_SESSION['email']))) {
-    header("location:dang_nhap.php");
-} else {
-    $name = $_SESSION['name'];
-    $email = $_SESSION['email'];
-
-    include_once 'dbConnection.php';
-} ?>
 <!DOCTYPE html>
 <html lang="vi">
 
