@@ -248,33 +248,38 @@ document.getElementById('zoom-in').addEventListener('click', zoomIn);
 document.getElementById('zoom-out').addEventListener('click', zoomOut);
     </script>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        h1 {
-            text-align: center;
-        }
-        #pdf-render {
-            display: block;
-            margin: 20px auto;
-            border: 1px solid black;
-        }
-        .controls {
-            text-align: center;
-            margin-top: 20px;
-        }
-        .controls button {
-            padding: 10px 20px;
-            margin: 0 10px;
-            font-size: 16px;
-        }
-        .zoom-controls {
-            text-align: center;
-            margin-top: 10px;
-        }
+       body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+#pdf-render {
+    display: block;
+    margin: 20px auto;
+    border: 1px solid black;
+}
+
+.controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.controls button {
+    padding: 5px 10px;  /* Giảm padding */
+    margin: 0 5px;  /* Giảm khoảng cách giữa các nút */
+    font-size: 12px;  /* Giảm kích thước chữ */
+}
+
+.zoom-controls {
+    text-align: center;
+    margin-top: 10px;
+}
     </style>
 
     <footer id="footer">
