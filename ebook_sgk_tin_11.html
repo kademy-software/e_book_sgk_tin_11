@@ -152,7 +152,7 @@
     </main><!-- End #main -->
     <script>
         // URL của tệp PDF
-        const url = 'Tin Hoc 11 THUD.pdf';
+        const url = 'link_sach.pdf';
 
         // Khởi tạo PDFJS
 let pdfDoc = null,
@@ -160,7 +160,7 @@ let pdfDoc = null,
     pageIsRendering = false,
     pageNumIsPending = null;
 
-let scale =  window.innerWidth / 800;  // Độ phóng to/thu nhỏ trang PDF ban đầu
+let scale = 1.5;  // Độ phóng to/thu nhỏ trang PDF ban đầu
 const canvas = document.getElementById('pdf-render'),
       ctx = canvas.getContext('2d');
 
