@@ -1,3 +1,14 @@
+<?php
+include_once 'dbConnection.php';
+session_start();
+if (!(isset($_SESSION['email']))) {
+    header("location:dang_nhap.php");
+} else {
+    $name = $_SESSION['name'];
+    $email = $_SESSION['email'];
+
+    include_once 'dbConnection.php';
+} ?>
 <!DOCTYPE html>
 <html lang="vi">
 
@@ -152,7 +163,7 @@
     </main><!-- End #main -->
     <script>
         // URL của tệp PDF
-        const url = 'link_sach.pdf';
+        const url = 'Tin Hoc 11 THUD.pdf';
 
         // Khởi tạo PDFJS
 let pdfDoc = null,
@@ -160,7 +171,7 @@ let pdfDoc = null,
     pageIsRendering = false,
     pageNumIsPending = null;
 
-let scale = 1.5;  // Độ phóng to/thu nhỏ trang PDF ban đầu
+let scale =  window.innerWidth / 800;  // Độ phóng to/thu nhỏ trang PDF ban đầu
 const canvas = document.getElementById('pdf-render'),
       ctx = canvas.getContext('2d');
 
