@@ -157,7 +157,7 @@ let pdfDoc = null,
     pageIsRendering = false,
     pageNumIsPending = null;
 
-let scale =  window.innerWidth / 800;   // Độ phóng to/thu nhỏ trang PDF ban đầu
+let scale = (window.innerWidth / 4) / 800;   // Độ phóng to/thu nhỏ trang PDF ban đầu
 const canvas = document.getElementById('pdf-render'),
       ctx = canvas.getContext('2d');
 
